@@ -224,14 +224,16 @@ quadcopter-drone/
 - Migrate to a dedicated **F4/F7 flight controller** for higher loop rates
 
 ---
+## Publication
+**Mahmoud A. Mohamed** (first author), A. Samir, M. Nasr, K. Shaban, A. Ramadan, and M. Ashraf, *"Design and Implementation of a Low-Cost ESP32 Quadcopter with a Custom ESP-NOW Radio Link,"* **2026 11th International Conference on Robotics and Automation Engineering (ICRAE)**, Nagoya University, Japan, Nov. 20–22, 2026 (Paper ID: AE067). **Accepted for oral presentation and publication** (indexed by Ei Compendex, Scopus).
 
 ## 👥 Team
 
 **Kareem Shaban Eid** — Mechatronics Engineering Student, E-JUST  
 [LinkedIn](https://linkedin.com/in/kareem-04-soliman) · [GitHub](https://github.com/Kareem-04)  
 
-**Mahmoud Alaa** — Mechatronics Engineering Student, E-JUST  
-[LinkedIn](https://www.linkedin.com/in/mahmoud-a-ab2134340)
+**Mahmoud A. Mohamed (Mahmoud Alaa)** — Mechatronics Engineering Student, E-JUST  
+[LinkedIn](https://www.linkedin.com/in/mahmoud-a-ab2134340) · [GitHub](https://github.com/MamoudAlaa)
 
 **Mariam Nasr** — Mechatronics Engineering Student, E-JUST  
 [LinkedIn](https://www.linkedin.com/in/mariam-nasr-246262222)
