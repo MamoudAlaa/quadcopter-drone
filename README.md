@@ -66,7 +66,8 @@ The remote controller is a custom ESP32 transmitter that reads four joystick axe
 | Remote Controller MCU | ESP32-DEVKIT-V1 | Transmitter |
 | IMU | MPU6050 (I2C) | 6-axis gyro + accelerometer |
 | ESCs | 4× brushless ESC | Motor speed control |
-| Motors | 4× brushless DC motors | Propulsion |
+| Motors | 4× A2212 13T 1000KV brushless DC motors | Propulsion |
+| Propellers | 4× 10×4.5 propellers | Lift & thrust |
 | Frame | Custom (SolidWorks CAD) | Quadcopter X-frame |
 | Joysticks | 2× analog joystick modules | Throttle/Yaw + Roll/Pitch |
 | Aux Switches | 2× DIP toggle switches | Flight mode, arm/disarm |
@@ -191,16 +192,15 @@ The drone runs [**ESP-FC**](https://github.com/rtlopez/esp-fc), an open-source f
 ```
 quadcopter-drone/
 ├── README.md
-├── remote_controller/
-│   └── transmitter/
-│       └── transmitter.ino         ← ESP32 transmitter firmware (ESP-NOW)
-├── schematics/
-│   ├── flight_controller.pdf       ← FC wiring: ESP32 + MPU6050 + 4× ESC
-│   └── remote_controller.pdf       ← TX wiring: ESP32 + joysticks + switches
-├── CAD/
-│   └── (SolidWorks assembly files) ← Frame 3D models
-└── docs/
-    └── (videos and references)
+├── Remote controller/
+│   └── transmitter.ino              ← ESP32 transmitter firmware (ESP-NOW, 50 Hz)
+├── Schematics/
+│   ├── Flight controller.pdf        ← FC wiring: ESP32 + MPU6050 + 4× ESC
+│   └── Remote controller.pdf        ← Transmitter wiring: ESP32 + 2× Joysticks + 2× Switches
+└── CAD/
+    ├── drone assembly.SLDASM        ← Full SolidWorks quadcopter assembly
+    ├── BLDC_A2212_13T_1000KV*.SLD*  ← Motor CAD models & mount plates
+    └── 10x4.5L.STEP                 ← 10×4.5 propeller 3D model
 ```
 
 ---
